@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'SquareDecoStroke';
+  src: url('@/assets/fonts/SquareDecoStroke.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuperWebcomicBros';
+  src: url('@/assets/fonts/SuperWebcomicBros.ttf') format('truetype');
+  font-style: normal;
+}
+
+body {
+  font-family: 'SuperWebcomicBros', sans-serif;
+}

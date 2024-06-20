@@ -1,0 +1,11 @@
+@import './reset.css';
+@import './fonts.css';
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-family: "SuperWebcomicBros";
+  color:#4f564b;
+}
+
