@@ -15,21 +15,21 @@
 </template>
 
 <script>
-export default {
-  name: "TheFooter",
-};
+  export default {
+    name: "TheFooter",
+  }
 </script>
 
 <style lang="scss">
-.the-footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  z-index: 2;
+  .the-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 2;
 
-  &__icon {
-    width: 70px;
-    height: 70px;
+    &__icon {
+      width: 70px;
+      height: 70px;
+    }
   }
-}
 </style>

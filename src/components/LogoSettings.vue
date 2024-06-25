@@ -14,24 +14,24 @@
 </template>
 
 <script>
-export default {
-  name: "LogoSettings",
-};
+  export default {
+    name: "LogoSettings",
+  }
 </script>
 
 <style lang="scss">
-.logo-settings {
-  display: flex;
-  justify-content: space-between;
+  .logo-settings {
+    display: flex;
+    justify-content: space-between;
 
-  &__logo {
-    width: 139px;
-    height: 99px;
-  }
+    &__logo {
+      width: 139px;
+      height: 99px;
+    }
 
-  &__bottle {
-    width: 138px;
-    height: 120px;
+    &__bottle {
+      width: 138px;
+      height: 120px;
+    }
   }
-}
 </style>

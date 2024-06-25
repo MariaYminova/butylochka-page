@@ -6,13 +6,13 @@
 </template>
 
 <script>
-export default {
-  name: "BtnBack",
-};
+  export default {
+    name: "BtnBack",
+  }
 </script>
 
 <style lang="scss">
-.btn-back {
-  margin: 10px;
-}
+  .btn-back {
+    margin: 10px;
+  }
 </style>

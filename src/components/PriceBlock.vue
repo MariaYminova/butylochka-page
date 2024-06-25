@@ -6,30 +6,30 @@
 </template>
 
 <script>
-export default {
-  name: "PriceBlock",
+  export default {
+    name: "PriceBlock",
 
-  props: {
-    price: {
-      type: String,
-      required: true,
+    props: {
+      price: {
+        type: String,
+        required: true,
+      },
     },
-  },
-};
+  }
 </script>
 
 <style lang="scss">
-.price-block {
-  display: flex;
-  align-items: center;
+  .price-block {
+    display: flex;
+    align-items: center;
 
-  &__coin {
-    width: 25px;
-    height: 25px;
-  }
+    &__coin {
+      width: 25px;
+      height: 25px;
+    }
 
-  &__price {
-    font-size: 14px;
+    &__price {
+      font-size: 14px;
+    }
   }
-}
 </style>

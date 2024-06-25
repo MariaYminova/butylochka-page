@@ -6,7 +6,6 @@
       <div class="account-page__bg">
         <div class="account-page__bg-white">
           <img class="account-page__leaf" src="@/icons/icon-leaf.svg" />
-          <LogoSettings />
 
           <div class="account-page__acc-info">
             <div>
@@ -17,7 +16,7 @@
           </div>
 
           <HeadingFeed style="margin-bottom: 10px">
-            <p class="heading-feed__text">Достижения</p></HeadingFeed
+            <p class="heading-feed__text">История</p></HeadingFeed
           >
 
           <RewardDay />
@@ -127,8 +126,8 @@ export default {
   }
 
   &__avatar {
-    height: 71px;
-    width: 71px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 10px;
   }
 

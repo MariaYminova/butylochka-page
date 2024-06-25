@@ -20,46 +20,46 @@
 </template>
 
 <script>
-import { useSettingsStore } from "@/stores/settingsStore";
+  import { useSettingsStore } from "@/stores/settingsStore"
 
-export default {
-  name: "TheHeader",
+  export default {
+    name: "TheHeader",
 
-  setup() {
-    const settingsStore = useSettingsStore();
+    setup() {
+      const settingsStore = useSettingsStore()
 
-    const toggleSound = () => {
-      settingsStore.sound = !settingsStore.sound;
-    };
+      const toggleSound = () => {
+        settingsStore.sound = !settingsStore.sound
+      }
 
-    return {
-      settingsStore,
-      toggleSound,
-    };
-  },
-};
+      return {
+        settingsStore,
+        toggleSound,
+      }
+    },
+  }
 </script>
 
 <style lang="scss">
-.the-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  &__logo {
-    width: 179px;
-    height: 120px;
+  .the-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-  }
 
-  &__btn-sound {
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff00;
-    border: none;
-    position: absolute;
-    left: 10px;
+    &__logo {
+      width: 179px;
+      height: 120px;
+      position: relative;
+    }
+
+    &__btn-sound {
+      width: 50px;
+      height: 50px;
+      background-color: #ffffff00;
+      border: none;
+      position: absolute;
+      left: 10px;
+    }
   }
-}
 </style>
