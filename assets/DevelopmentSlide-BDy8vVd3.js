@@ -1,1 +1,0 @@
-import{_ as e,o,c as t}from"./index-CDAA_Y2u.js";const s={name:"DevelopmentSlide"},n={class:"development-slide"};function c(r,a,p,_,l,d){return o(),t("div",n,"Раздел находится в разработке")}const m=e(s,[["render",c]]);export{m as D};
