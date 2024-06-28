@@ -11,8 +11,13 @@
 <style lang="scss">
   .table-player {
     &__img {
-      height: 65px;
-      width: 65px;
+      height: 55px;
+      width: 55px;
+
+      @media (min-width: 410px) {
+        height: 65px;
+        width: 65px;
+      }
     }
   }
 </style>

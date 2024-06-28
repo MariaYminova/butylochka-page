@@ -1,27 +1,18 @@
 <template>
-  <div class="account-page">
+  <div class="shop-page">
     <RouterLink to="/"> <BtnBack /></RouterLink>
-    <div class="account-page__wrap">
-      <img src="@/icons/icon-clothespin.svg" class="account-page__icon" />
-      <div class="account-page__bg">
-        <div class="account-page__bg-white">
-          <img class="account-page__leaf" src="@/icons/icon-leaf.svg" />
-
-          <div class="account-page__acc-info">
-            <div>
-              <img class="account-page__avatar" src="@/img/img-avatar.png" />
-              <AccountMoney />
-            </div>
-            <div style="width: 100%; margin-left: 20px">
-              <AccountData />
-              <Bio />
-            </div>
-          </div>
+    <div class="shop-page__wrap">
+      <img src="@/icons/icon-clothespin.svg" class="shop-page__icon" />
+      <div class="shop-page__bg">
+        <div class="shop-page__bg-white">
+          <img class="shop-page__leaf" src="@/icons/icon-leaf.svg" />
+          <LogoSettings />
+          <AccountMoney class="shop-page__score" />
 
           <HeadingFeed style="margin-bottom: 10px">
-            <p class="heading-feed__text">История</p></HeadingFeed
+            <p class="heading-feed__text">Магазин</p></HeadingFeed
           >
-          <SwiperHistory />
+          <SwiperShop />
         </div>
       </div>
     </div>
@@ -35,10 +26,10 @@
   import HeadingFeed from "@/components/HeadingFeed.vue"
   import BtnBack from "@/components/BtnBack.vue"
   import Bio from "@/components/Bio.vue"
-  import SwiperHistory from "@/components/SwiperHistory.vue"
+  import SwiperShop from "@/components/SwiperShop.vue"
 
   export default {
-    name: "AccountPage",
+    name: "ShopPage",
 
     components: {
       LogoSettings,
@@ -47,13 +38,13 @@
       HeadingFeed,
       BtnBack,
       Bio,
-      SwiperHistory,
+      SwiperShop,
     },
   }
 </script>
 
 <style lang="scss">
-  .account-page {
+  .shop-page {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -67,7 +58,6 @@
       position: absolute;
       top: 80px;
       left: 0;
-      background-color: #000000ab;
     }
 
     &__bg {
@@ -119,14 +109,9 @@
     }
 
     &__avatar {
-      height: 80px;
-      width: 80px;
+      height: 100px;
+      width: 100px;
       margin-bottom: 10px;
-
-      @media (min-width: 410px) {
-        height: 100px;
-        width: 100px;
-      }
     }
 
     &__acc-info {
@@ -145,6 +130,11 @@
       margin-top: 20px;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 20px;
+    }
+
+    &__score {
+      float: right;
+      margin: 20px 0;
     }
   }
 </style>

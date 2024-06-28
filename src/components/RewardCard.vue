@@ -31,20 +31,28 @@
 
 <style lang="scss">
   .reward-card {
+    height: 100%;
+    width: 100%;
+
     &__block-img {
-      background-image: url("@/icons/icon-reward-card-bg.svg");
+      background: url("@/icons/icon-reward-card-bg.svg") no-repeat center center;
       border: 2px solid #6d4444;
       border-bottom: none;
       border-radius: 10px 10px 0 0;
-      height: 91px;
-      width: 108px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      background-size: cover;
+      height: 100px;
     }
 
     &__block-day {
       border: 2px solid #6d4444;
       border-radius: 0 0 10px 10px;
       height: 22px;
-      width: 108px;
+      width: 100%;
       background-color: #6d444444;
     }
 
@@ -52,16 +60,6 @@
       font-size: 14px;
       font-family: "SquareDecoStroke";
       text-align: center;
-    }
-
-    &__block-img {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-    }
-
-    &__icon-coin {
     }
   }
 </style>

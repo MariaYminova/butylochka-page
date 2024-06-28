@@ -16,6 +16,21 @@ const routes = [
     name: "account-page",
     component: () => import("../views/АccountPage.vue"),
   },
+  {
+    path: "/reward-page",
+    name: "reward-page",
+    component: () => import("../views/RewardPage.vue"),
+  },
+  {
+    path: "/shop-page",
+    name: "shop-page",
+    component: () => import("../views/ShopPage.vue"),
+  },
+  {
+    path: "/viewing-profile",
+    name: "viewing-profile",
+    component: () => import("../views/ViewingProfile.vue"),
+  },
 ];
 
 const router = createRouter({

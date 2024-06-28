@@ -10,20 +10,20 @@
 </template>
 
 <script>
-export default {
-  name: "MainPage",
-};
+  export default {
+    name: "MainPage",
+  }
 </script>
 
 <style lang="scss">
-.main-page {
-  display: flex;
-  justify-content: center;
+  .main-page {
+    display: flex;
+    justify-content: center;
 
-  &__logo {
-    width: 340px;
-    height: 190px;
-    margin-top: -40px;
+    &__logo {
+      width: 340px;
+      height: 190px;
+      margin-top: -40px;
+    }
   }
-}
 </style>

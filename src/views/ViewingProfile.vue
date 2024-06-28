@@ -1,27 +1,25 @@
 <template>
-  <div class="account-page">
-    <RouterLink to="/"> <BtnBack /></RouterLink>
-    <div class="account-page__wrap">
-      <img src="@/icons/icon-clothespin.svg" class="account-page__icon" />
-      <div class="account-page__bg">
-        <div class="account-page__bg-white">
-          <img class="account-page__leaf" src="@/icons/icon-leaf.svg" />
+  <div class="viewing-profile">
+    <RouterLink to="/account-page"> <BtnBack /></RouterLink>
+    <div class="viewing-profile__wrap">
+      <img src="@/icons/icon-clothespin.svg" class="viewing-profile__icon" />
+      <div class="viewing-profile__bg">
+        <div class="viewing-profile__bg-white">
+          <img class="viewing-profile__leaf" src="@/icons/icon-leaf.svg" />
 
-          <div class="account-page__acc-info">
-            <div>
-              <img class="account-page__avatar" src="@/img/img-avatar.png" />
-              <AccountMoney />
-            </div>
-            <div style="width: 100%; margin-left: 20px">
-              <AccountData />
-              <Bio />
+          <div class="viewing-profile__wrap-info">
+            <HeadingFeed style="margin: 25px 0">
+              <p class="heading-feed__text">Личный профиль</p></HeadingFeed
+            >
+            <img class="viewing-profile__avatar" src="@/img/img-avatar.png" />
+
+            <div class="viewing-profile__acc-info">
+              <div style="width: 100%">
+                <AccountData />
+                <BioAnotherProfile />
+              </div>
             </div>
           </div>
-
-          <HeadingFeed style="margin-bottom: 10px">
-            <p class="heading-feed__text">История</p></HeadingFeed
-          >
-          <SwiperHistory />
         </div>
       </div>
     </div>
@@ -34,11 +32,10 @@
   import AccountData from "@/components/AccountData.vue"
   import HeadingFeed from "@/components/HeadingFeed.vue"
   import BtnBack from "@/components/BtnBack.vue"
-  import Bio from "@/components/Bio.vue"
-  import SwiperHistory from "@/components/SwiperHistory.vue"
+  import BioAnotherProfile from "@/components/BioAnotherProfile.vue"
 
   export default {
-    name: "AccountPage",
+    name: "ViewingProfile",
 
     components: {
       LogoSettings,
@@ -46,14 +43,13 @@
       AccountData,
       HeadingFeed,
       BtnBack,
-      Bio,
-      SwiperHistory,
+      BioAnotherProfile,
     },
   }
 </script>
 
 <style lang="scss">
-  .account-page {
+  .viewing-profile {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -68,6 +64,12 @@
       top: 80px;
       left: 0;
       background-color: #000000ab;
+    }
+
+    &__wrap-info {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
     }
 
     &__bg {
@@ -119,32 +121,23 @@
     }
 
     &__avatar {
-      height: 80px;
-      width: 80px;
+      height: 120px;
+      width: 120px;
       margin-bottom: 10px;
+      margin: 0 auto;
 
       @media (min-width: 410px) {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
       }
     }
 
     &__acc-info {
-      display: flex;
-      justify-content: space-between;
       margin: 10px 0;
 
       @media (min-width: 410px) {
         margin: 20px 0;
       }
-    }
-
-    &__card-grid {
-      display: grid;
-      justify-items: center;
-      margin-top: 20px;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 20px;
     }
   }
 </style>

@@ -25,13 +25,13 @@
     justify-content: space-between;
 
     &__logo {
-      width: 139px;
-      height: 99px;
+      width: 130px;
+      height: 90px;
     }
 
     &__bottle {
-      width: 138px;
-      height: 120px;
+      width: 110px;
+      height: 95px;
     }
   }
 </style>

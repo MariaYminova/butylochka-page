@@ -4,13 +4,13 @@
       <img class="the-footer__icon" src="@/icons/icon-acc.svg" />
     </RouterLink>
 
-    <div class="the-footer__nav-btn">
+    <RouterLink to="/reward-page" class="the-footer__nav-btn">
       <img class="the-footer__icon" src="@/icons/icon-awards.svg" />
-    </div>
+    </RouterLink>
 
-    <div class="the-footer__nav-btn">
+    <RouterLink to="/shop-page" class="the-footer__nav-btn">
       <img class="the-footer__icon" src="@/icons/icon-shop.svg" />
-    </div>
+    </RouterLink>
   </header>
 </template>
 
@@ -28,8 +28,13 @@
     z-index: 2;
 
     &__icon {
-      width: 70px;
-      height: 70px;
+      width: 45px;
+      height: 45px;
+
+      @media (min-width: 410px) {
+        height: 70px;
+        width: 70px;
+      }
     }
   }
 </style>

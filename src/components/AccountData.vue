@@ -14,8 +14,6 @@
 
 <style lang="scss">
   .account-data {
-    width: 70%;
-
     &__text {
       border-bottom: 1px solid #6d4444;
       margin-bottom: 5px;
