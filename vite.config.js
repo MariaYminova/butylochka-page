@@ -1,42 +1,42 @@
 import { fileURLToPath, URL } from "node:url"
-import config from "./src/api/config"
+// import config from "./src/api/config"
 
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 
-const isDev = process.env.NODE_ENV === "development"
+// const isDev = process.env.NODE_ENV === "development"
 
-const proxySchema = () => {
-  const schema = {}
+// const proxySchema = () => {
+//   const schema = {}
 
-  Object.keys(config).forEach((urlType) => {
-    const { origin } = new URL(config[urlType])
+//   Object.keys(config).forEach((urlType) => {
+//     const { origin } = new URL(config[urlType])
 
-    const key = "/" + urlType
+//     const key = "/" + urlType
 
-    const value = {
-      target: origin,
-      secure: false,
-      changeOrigin: true,
-      cookieDomainRewrite: "localhost",
-      headers: {
-        origin,
-      },
-    }
+//     const value = {
+//       target: origin,
+//       secure: false,
+//       changeOrigin: true,
+//       cookieDomainRewrite: "localhost",
+//       headers: {
+//         origin,
+//       },
+//     }
 
-    schema[key] = value
-  })
+//     schema[key] = value
+//   })
 
-  return schema
-}
-
-
+//   return schema
+// }
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  define: {
-    IS_DEV: isDev,
-  },
+  base: "/butylochka/",
+
+  // define: {
+  //   IS_DEV: isDev,
+  // },
 
   plugins: [vue()],
 
@@ -46,9 +46,9 @@ export default defineConfig({
     },
   },
 
-  server: {
-    proxy: {
-      ...proxySchema()
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     ...proxySchema(),
+  //   },
+  // },
 })

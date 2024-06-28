@@ -19,12 +19,12 @@
       TheFooter,
       AudioGame,
     },
-    data() {
-      return {
-        placeholder:
-          "query_id=AAFrufpFAAAAAGu5-kXHuqfN&user=%7B%22id%22%3A1174059371%2C%22first_name%22%3A%22Maria_Yminova%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22maria_yminova%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1719399188&hash=8a5d699964266954d7458f1b5784e83231efaadc8425293dc26e71b5bb065c30",
-      }
-    },
+    // data() {
+    //   return {
+    //     placeholder:
+    //       "query_id=AAFrufpFAAAAAGu5-kXHuqfN&user=%7B%22id%22%3A1174059371%2C%22first_name%22%3A%22Maria_Yminova%22%2C%22last_name%22%3A%22%22%2C%22username%22%3A%22maria_yminova%22%2C%22language_code%22%3A%22ru%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1719399188&hash=8a5d699964266954d7458f1b5784e83231efaadc8425293dc26e71b5bb065c30",
+    //   }
+    // },
     mounted() {
       this.showOverlayOnSpecificPages()
     },
@@ -34,40 +34,40 @@
       },
     },
     methods: {
-      checkAuth() {
-        if (!localStorage.refreshToken) {
-          this.twaAuth()
-        }
-      },
-      async twaAuth() {
-        const twa = window.Telegram.WebApp
-        const { initData } = twa
+      // checkAuth() {
+      //   if (!localStorage.refreshToken) {
+      //     this.twaAuth()
+      //   }
+      // },
+      // async twaAuth() {
+      //   const twa = window.Telegram.WebApp
+      //   const { initData } = twa
 
-        const key =
-          (IS_DEV || !initData) && this.placeholder
-            ? this.placeholder
-            : initData
+      //   const key =
+      //     (IS_DEV || !initData) && this.placeholder
+      //       ? this.placeholder
+      //       : initData
 
-        try {
-          const { data } = await this.$axios.login.post("/twa", {
-            initData: key,
-          })
+      //   try {
+      //     const { data } = await this.$axios.login.post("/twa", {
+      //       initData: key,
+      //     })
 
-          console.log(data)
+      //     console.log(data)
 
-          localStorage.setItem("accessToken", data.accessToken)
-          localStorage.setItem("refreshToken", data.refreshToken)
-        } catch (e) {}
-      },
-      async fetchUserData() {
-        try {
-          console.dir(this.$axios.user.get)
-          const response = await this.$axios.user.get("/me")
-          console.log("User data:", response)
-        } catch (error) {
-          console.log(error)
-        }
-      },
+      //     localStorage.setItem("accessToken", data.accessToken)
+      //     localStorage.setItem("refreshToken", data.refreshToken)
+      //   } catch (e) {}
+      // },
+      // async fetchUserData() {
+      //   try {
+      //     console.dir(this.$axios.user.get)
+      //     const response = await this.$axios.user.get("/me")
+      //     console.log("User data:", response)
+      //   } catch (error) {
+      //     console.log(error)
+      //   }
+      // },
       showOverlayOnSpecificPages() {
         const pagesWithOverlay = [
           "/account-page",
