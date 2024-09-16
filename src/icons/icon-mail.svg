@@ -1,0 +1,18 @@
+<svg width="64" height="67" viewBox="0 0 64 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.6521 23.5583H0.6521V66.9016H63.6521V23.5583Z" fill="url(#paint0_radial_33_203)"/>
+<path d="M57.7458 49.1703H44.949V61.9763H57.7458V49.1703Z" fill="#6D4444"/>
+<path d="M49.1618 53.1106C50.4657 53.1106 50.8383 54.0795 50.8383 54.0795C50.8383 54.0795 51.2108 53.1106 52.5148 53.1106C53.8187 53.1106 55.2158 55.2422 50.8383 59.021C46.554 55.2422 47.8579 53.1106 49.1618 53.1106Z" fill="#EE3D35"/>
+<path d="M0.6521 22.5733H63.6521L32.2015 5.82703L0.6521 22.5733Z" fill="#FADD60"/>
+<path d="M63.6521 23.5583L50.3994 30.5841L32.2015 40.3046L13.9048 30.5841L0.6521 23.5583H63.6521Z" fill="#FFBA51"/>
+<path d="M49.8709 0.901611V30.4539L31.7093 40.3046L13.449 30.4539V0.901611H49.8709Z" fill="#6D4444"/>
+<path opacity="0.6" d="M44.949 6.81213H19.3552V8.78228H44.949V6.81213Z" fill="#FADD60"/>
+<path opacity="0.6" d="M44.949 12.7225H19.3552V14.6927H44.949V12.7225Z" fill="#FADD60"/>
+<path opacity="0.6" d="M44.949 18.6329H19.3552V20.6031H44.949V18.6329Z" fill="#FADD60"/>
+<path opacity="0.6" d="M13.449 30.4539H49.8709L31.7093 40.3046L13.449 30.4539Z" fill="#FADD60"/>
+<defs>
+<radialGradient id="paint0_radial_33_203" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.1521 45.3014) scale(27.1598 26.8685)">
+<stop stop-color="#FAE061"/>
+<stop offset="1" stop-color="#FFBA51"/>
+</radialGradient>
+</defs>
+</svg>

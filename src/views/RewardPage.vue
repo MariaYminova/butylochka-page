@@ -9,6 +9,10 @@
             class="reward-page__leaf"
             src="@/icons/icon-leaf.svg"
           /><DevelopmentSlide />
+          <BtnWrite />
+          <BtnKiss />
+          <BtnMiss />
+          <BtnSendGift />
         </div>
       </div>
     </div>
@@ -18,6 +22,10 @@
 <script>
   import BtnBack from "@/components/BtnBack.vue"
   import DevelopmentSlide from "@/components/DevelopmentSlide.vue"
+  import BtnWrite from "@/components/Btn/BtnWrite.vue"
+  import BtnKiss from "@/components/Btn/BtnKiss.vue"
+  import BtnMiss from "@/components/Btn/BtnMiss.vue"
+  import BtnSendGift from "@/components/Btn/BtnSendGift.vue"
 
   export default {
     name: "RewardPage",
@@ -25,6 +33,10 @@
     components: {
       BtnBack,
       DevelopmentSlide,
+      BtnWrite,
+      BtnKiss,
+      BtnMiss,
+      BtnSendGift,
     },
   }
 </script>
